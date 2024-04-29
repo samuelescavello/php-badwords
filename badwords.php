@@ -1,7 +1,7 @@
 <?php 
 $frase = $_POST['frase'];
-str_replace('ciao','***', $frase);
-$sos = str_replace('ciao','***', $frase);
+$badword = $_POST['badword'];
+$sos = str_replace($badword,'***', $frase);
 ?>
 <!DOCTYPE html>
 <html lang="en">
